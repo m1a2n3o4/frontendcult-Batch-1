@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS - Navbar, Accrodian, popup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <!-- Collaps-->
+    <!-- <a href="#mydiv" class="btn btn-primary" data-bs-toggle="collapse">CVV</a>
+    <div class="my-class" id="mydiv">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsum accusamus ducimus sunt est delectus quod a ex! Nesciunt deleniti suscipit beatae ex recusandae accusantium qui eos quidem perspiciatis labore.</p>
+    </div> -->
+
+     <!-- Cards-->
+     <!-- <div class="card" style="width: 300px;">
+        <div class="card-header">ABC college</div>
+        <div class="card-body">
+            <img src="bg.jpg" class="card-img-top" alt="my image">
+            <h5 class="card-title">Manohar Lotlapalli</h5>
+            <p class="card-text">Student ID : 12345</p>
+            <p class="card-text">Address : 12345</p>
+            <p class="card-text">Mobile ID : 12345</p>
+        </div>
+        <div class="card-footer">Emge : 95566y78tu8t</div>
+     </div> -->
+
+    <!-- accordion-->
+   <!-- <div id="accordion">
+     <div class="card">
+        <div class="card-header">
+            <a href="#colpone"  data-bs-toggle="collapse">Group 1</a>
+        </div>
+        <div id="colpone" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, tempore quis voluptatibus voluptatem, suscipit incidunt tenetur sunt placeat rem neque eligendi. Nihil voluptatem cumque ullam dolor accusantium autem consequatur.</p>
+            </div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="card-header">
+            <a href="#colpone2"  data-bs-toggle="collapse">Group 2</a>
+        </div>
+        <div id="colpone2" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, tempore quis voluptatibus voluptatem, suscipit incidunt tenetur sunt placeat rem neque eligendi. Nihil voluptatem cumque ullam dolor accusantium autem consequatur.</p>
+            </div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="card-header">
+            <a href="#colpone3"  data-bs-toggle="collapse">Group 3</a>
+        </div>
+        <div id="colpone3" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, tempore quis voluptatibus voluptatem, suscipit incidunt tenetur sunt placeat rem neque eligendi. Nihil voluptatem cumque ullam dolor accusantium autem consequatur.</p>
+            </div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="card-header">
+            <a href="#colpone4"  data-bs-toggle="collapse">Group 4 </a>
+            <div class="" data-bs-toggle="collapse" >Icon</div>
+        </div>
+        <div id="colpone4" class="collapse " data-bs-parent="#accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, tempore quis voluptatibus voluptatem, suscipit incidunt tenetur sunt placeat rem neque eligendi. Nihil voluptatem cumque ullam dolor accusantium autem consequatur.</p>
+            </div>
+        </div>
+     </div>
+   </div> -->
+
+   <!-- Simple Navigation
+   data-bs-toggle="collapse/toggle/..."
+ -->
+     <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  data-bs-toggle="tab" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  data-bs-toggle="tab" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  data-bs-toggle="tab" href="#contact">Contact US</a>
+        </li>
+     </ul>
+
+     <div class="tab-content">
+        <div class="tab-pane container" id="home">Welcome to website</div>
+        <div class="tab-pane container" id="service">Our service</div>
+        <div class="tab-pane container" id="about">we delivery products</div>
+        <div class="tab-pane container" id="contact">mail:manu#test.com</div>
+     </div>
+
+
+  
+     <!-- <nav class="navbar navbar-expand bg-primary ">
+        <div class="container">
+                <li class="nav-item">
+                    <a class="nav-link"  href="#home">Menu1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"   href="#service">menu 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"   href="#about">menu 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"   href="#contact">menu 4</a>
+                </li>
+        </div>
+    </nav >   
+    
+    <nav>
+
+    </nav> -->
+     
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+             <a class="navbar-brand">Logo</a>
+        
+        <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#Collapsenav"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Collapsenav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#home">Menu1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="#service">menu 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="#about">menu 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="#contact">menu 4</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+
+</body>
+</html>

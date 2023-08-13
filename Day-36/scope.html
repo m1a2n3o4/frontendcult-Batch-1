@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS  Scopes</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Redeclare</th>
+            <th>Reasign</th>
+        </tr>
+        <tr>
+            <td>Var</td>
+        </tr>
+    </table>
+    <!--
+        Var
+        Let
+        Const
+        Scope - Local, Global, Block
+        Declare
+        Redeclare
+        Override.
+        Declare and assign.
+
+        Block Scope.
+
+        Diff -> 
+        var
+         
+    -->
+    <script>
+
+        // Var
+       // var - redeclare
+        var name1 = 'someee';
+        var  name1 = "manohar-123";
+         console.log(name1);
+
+        // Let - redcalre
+        let my_mobile = "Apple12";
+           my_mobile = "apple13";
+      console.log(my_mobile);
+
+        //const
+        const my_pen = ['sd', 'sd'];
+       // my_pen = ['sd', 'ss'];
+
+      //  const my_pen = 'sss';
+
+
+        let username = "Manohar"; // Global Variable.
+        let password = "12345"; // Global Variable
+        let trbus = 'Bus';
+
+        
+
+        function Home1() {
+            console.log(name);
+            let youcar = 'Audi';
+            let my_TV = '55inch LG'; // Block level
+        }
+
+        function Home2() {
+            let youcar = 'BMW123';
+            console.log(youcar);
+            let my_mobile = "Vivo v3";
+            console.log(trbus);
+           // console.log(my_TV);
+        }
+
+        function home3() {
+            //console.log(my_mobile);
+            console.log(trbus);
+        }
+
+        function logout() {
+            console.log(name);
+        }
+        Home1();
+        Home2();
+        home3();
+
+        {
+        
+        }
+    </script>
+</body>
+</html>

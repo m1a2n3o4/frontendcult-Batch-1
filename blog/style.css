@@ -1,0 +1,115 @@
+body {
+    background-color: #181d31;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #fb6542;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li {
+    display: inline;
+    word-spacing: 5px;
+}
+
+.logo {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-style: bold;
+    text-decoration: none;
+    word-spacing: 20px;
+}
+
+.left-item {
+    float: left;
+    width: 65%;
+    height: auto;
+    padding-left: 47px;
+}
+
+.right-item {
+    float: left;
+    width: 30%;
+    height: auto
+}
+
+.pro-1 {
+
+}
+
+.product {
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: auto;
+    width: 25%;
+    float: left;
+    margin-left: 20px;
+    height: auto;
+    background-color: white;
+}
+
+section {
+    position: relative;
+    top: 60px;
+}
+
+h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+img {
+    height: 150px;
+}
+
+p {
+    line-height: 15px;
+}
+
+.body-section {
+    padding: 20px;
+    color: #181d31;
+    font-size: 21px;
+    font-style: revert;
+}
+
+.button {
+    color: white;
+    padding: 10px;
+    background-color: #fb6542;
+    width: 105px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-box {
+    background-color: white;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkout {
+    width: 90%;
+}
+
+.button:hover {
+    background-color: gray;
+}

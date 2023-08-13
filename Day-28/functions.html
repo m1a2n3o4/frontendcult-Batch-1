@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Functions/methhods and events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Js Evets</h2>
+     <select id="mydropdown" onchange="updatemynumber(event)">
+        <option value="1">one</option>
+        <option value="2">rwo</option>
+        <option value="3">three</option>
+        <option value="4">four</option>
+     </select>
+     <button type="button" class="btn btn-primary" onclick="fun_name2()">Click me!</button>
+     <input type="text" id="box1" class="form-control" name="box1" value=""> Value1
+     <input type="text" id="box2" class="form-control" name="box2" value=""> Value2
+     <button type="button" class="btn btn-primary" onclick="addnumbers()">Add Numbers</button>
+     <div>
+        <div>
+        <span id="result"></span>
+    </div>
+    </div>
+     <input type="checkbox" value="30" onchange="chh(event)">
+     <i class="bi bi-car-front"></i>
+    <script>
+
+        function updatemynumber(data) {
+            alert(data.target.value);
+        }
+
+        function chh(event) {
+            alert(event.target.value);
+        }
+        function addnumbers() {
+            var val1 = document.getElementById('box1').value;
+            var val2 = document.getElementById('box2').value;
+            var res = Number(val1) + Number(val2);
+           // alert(res);
+           document.getElementById('result').innerHTML = res;
+        }
+        console.log('deafult one');
+        // How to crate a function and Invoke/call function
+        // Function with parameaters.
+                 
+        function check_onclik() {
+            alert('click works!');
+        } 
+              
+        function fun_name1(a,b,c) 
+        {
+         // console.log('This is fun 1');
+          var d = a * b * c; 
+          console.log(d);
+          fun_name2();
+        };
+
+        function fun_name2() 
+        {
+            console.log('This is fun 2');
+          
+        };
+
+        function fun_name3( ) 
+        {
+            console.log('This is fun 3');
+          
+        };
+         
+       //  fun_name2(); // invoke/call a function
+         fun_name3();
+         fun_name1(3,4,6);
+         fun_name1(5,7,7);
+         fun_name1(7,6,5);
+
+         //Javascript Events
+        //  onclick();
+        //  onchange();
+        //  onmousehover();
+        //  onkeydown();
+        //  onkeyup();
+        //  onload();
+
+
+
+
+    </script>
+</body>
+</html>

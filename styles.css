@@ -1,0 +1,21 @@
+ul {
+    background-color: black;
+    overflow: hidden;
+    list-style-type: none;
+    
+}
+.menu-text {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+    float: left;
+    text-align: center;
+    padding: 28px;
+}
+
+ h1 {
+    color: rgb(215 11 23); 
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+body {
+    background-color: #181d31;
+    font-family: 'Times New Roman', Times, serif;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    background-color: #fb6542;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+h2 {
+    color: white;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.left-item {
+    float: left;
+    width: 66%;
+    height: 100px;
+}
+.right-item {
+    float: left;
+    width: 30%;
+    height: 100px;
+}
+
+.prodcut {
+    height: 325px;
+    border: 1px solid white;
+    width: 189px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+img {
+  height: 140px;
+}
+
+section {
+    position: relative;
+    top: 60px;
+}
+
+.body-section {
+    padding: 20px;
+}
+
+.addtocart {
+    background-color: #fb6542;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    
+}
+
+.addtocart:hover {
+    background-color: gray;
+}
+
+.cart-box {
+    background-color: white;
+    height: 100px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+}

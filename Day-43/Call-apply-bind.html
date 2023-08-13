@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Call, Apply, Bind</title>
+</head>
+<body>
+    <script>
+        let name = {
+            firstname : "Manohar",
+            lastname : "Lotlapalli",
+            printFullname : function () {
+                console.log(this.firstname + ' ' + this.lastname);
+            }
+        }
+
+        //Invoke function
+        name.printFullname();
+
+        // Call Function
+        let name2 = {
+            firstname : "Virat",
+            lastname : "Kohli"
+        }
+
+        let name3 = {
+            firstname : "sachin",
+            lastname : "Tendulkar"
+        }
+
+        // function printname (nameobj) {
+        //    console.log(nameobj.firstname + ' ' + nameobj.lastname);
+        // }
+       // printname(name2);
+        name.printFullname.call(name2);
+        name.printFullname.call(name3);
+
+        let movie1 = {
+            name : "Jailer",
+            hero: "Rajni Sir",
+            director: "NELSON"
+        }
+
+        let movie2 = {
+            name : "Vikram",
+            hero: "Rolex sir",
+            director: "Lokesh"
+        }
+
+        let displaymoviename = function(lang1, lang2,lang3) {
+          return   console.log(this.name + ' ' + this.hero + ' ' + this.director + ' ' + lang1 + ' ' + lang2 + ' ' + lang3);
+        }
+
+        displaymoviename.call(movie1, 'Tamil', 'tamil', 'malayam');
+        displaymoviename.apply(movie2, ['Tamil', 'Telugu', 'Malayaal']);
+
+        // Bind same is call method only - but the Diff it will retun a method and will invoke latter.
+        // it will retun a copy method and invoke later.
+        let showmname =  displaymoviename.bind(movie1, 'Tamil', 'tamil', 'malayam');
+        console.log(showmname);
+        showmname();
+      
+    </script>
+</body>
+</html>

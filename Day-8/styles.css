@@ -1,0 +1,64 @@
+body {
+   background: red url("emo.png") top no-repeat right top fixed;
+ }
+
+p {
+    color: red !important;
+ }
+
+ h2 {
+    color: #424221;
+    text-align: center;
+ }
+
+ body {
+    background-color: rgb(25, 224, 157);
+ }
+
+ img {
+    height: 20px;
+ }
+
+ table {
+
+ }
+
+ .yeloow-heding {
+    color: yellow;
+    background-color: black;
+ }
+
+ .orange-heding {
+    color: rgb(73, 73, 185);
+    background-color: red;
+ }
+
+ #white-heding {
+    color: white;
+    background-color: red
+ }
+
+ /* 
+    this bellow prop will appllyu to events page.
+ */
+ img {
+    height: 100px;
+ }
+
+
+ .my-border {
+   border-left: 10px solid red;
+   border-top: 5px solid greenyellow;
+   border-right: 15px solid rgb(40, 13, 108);
+   border-right: 8px solid rgb(113, 97, 152);
+ }
+
+ 
+
+
+
+
+  
+
+
+ 

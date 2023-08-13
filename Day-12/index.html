@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Positions</title>
+    <style>
+        .abspos {
+        position: absolute;
+        top: 50px;
+        background-color: lightblue;
+        height: 200px;
+        width: 100%;
+       }
+
+       .child1 {
+        position: absolute;
+        top: 20px;
+        background-color: lightcoral;
+        width: 100%;
+       }
+
+       .child2 {
+        position: absolute;
+        top: 80px;
+        background-color: rgb(192, 43, 90);
+        width: 100%;
+       }
+
+       .relpos {
+        position: relative;
+        top: 20px;
+        background-color: rgb(19, 181, 235);
+       } 
+
+       .menubar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: lightcoral;
+       }
+
+       li {
+        display: inline;
+       }
+
+       .movies {
+        background-color: lightgreen;
+        height: 500px;
+        width: 100%;
+       }
+
+       .popular-movies {
+        background-color: black;
+        height: 500px;
+        width: 100%;
+       }
+
+       .rel {
+        position: relative;
+        top: 20px;
+       }
+       
+    </style>
+</head>
+<body>
+    <!--
+        Practice with me %, px, em, vw
+        Parent - Child.
+         ----------------Positions--------------
+         position : 
+        Static, -> Default positions.
+        Absolute, -> Parent based positioning.
+        Relative, -> Self based position
+        Fixed, -> Div fixed their it self
+        Sticky -> Fixed - after some height.
+
+
+        Overfloww method.
+    -->
+
+      <div class="ss">
+        <div class="child1">
+            <p>Child 1</p>
+        </div>
+        
+     </div>
+
+     <div class="rel">
+        <p>Relative</p>
+    </div>
+
+     
+
+   
+     
+
+</body>
+</html>

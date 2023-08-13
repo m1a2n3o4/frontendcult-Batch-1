@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - String Methods.</title>
+</head>
+<body>
+    <input type="search" name="data" id="data">
+    <input type="button" value="search" onclick="searhdata()"/>
+    <P id="result"></P>
+
+    <script>
+
+     let url = window.location.href;
+     let a = 10;
+     let b = 20;
+     console.log(a=b);
+        function searhdata() {
+            let searcData = document.getElementById('data').value;
+            let exstring = "html css js react php phthon git";
+            if(exstring.includes(searcData)) {
+               document.getElementById('result').innerHTML = exstring;
+            } else {
+                document.getElementById('result').innerHTML = 'no data avilable';
+            }
+
+        }
+        // String Methods- String Lenght
+        let city = "Hyderabad is big city";
+        console.log(city.length);
+
+        // Get String By position - chaarAt
+        console.log(city.charAt(2));
+
+        // For loop with String
+       for(let i=0; i<city.length; i++) {
+        console.log(city.charAt(i));
+       }
+
+       // Slice
+       let mobiles = "Apple, vivo, samsung, oneplys";
+       console.log(mobiles.slice(13,20));
+
+       // Concate - adding/Mixing
+
+       let fname = "Manohar";
+       let lname = "lotlapalli";
+
+       console.log(fname.concat(" ", lname)); // by using concate
+
+       console.log(fname + ' ' + lname); // Byusing plus operator
+
+       let train = 'Narrayaandri';
+
+       console.log('train name is:' + ' ' + train); //train name is Falnuma
+
+       // Replace the string
+       let laptops = "lg, HP, Dell";
+       console.log(laptops.replace("HP","Lenovo"));
+
+       // toLowerCase
+       let mytext = "MY NAME IS MANOHAR";
+       console.log(mytext.toLocaleLowerCase());
+
+        // toLowerCase
+       let mytext2 = "this is small letters";
+       console.log(mytext2.toLocaleUpperCase());
+
+       //Trmming the String
+       let mynewtext = "   clik here to activate windows    ";
+       console.log(mynewtext.trim());
+
+       // By position
+       let myphone = 'vivo12';
+       console.log(myphone[3]);
+
+       // String Search
+
+       // Includes
+       let mycourse = "this course includes html css js react";
+       console.log(mycourse.includes('html')); // false
+
+       // Indexof
+       console.log(mycourse.indexOf('html'));
+
+       //Startwith
+       console.log(mycourse.startsWith('course'));
+
+       //endwith
+       console.log(mycourse.endsWith('this'));
+
+       //
+
+
+
+    </script>
+</body>
+</html>

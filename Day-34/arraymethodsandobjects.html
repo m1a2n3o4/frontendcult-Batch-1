@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects</title>
+</head>
+<body>
+    <div id="emp"></div>
+
+    <!--
+        20 Tasks.
+           1) Get Totoal Emplyes. (Number)
+           2) Get all Managers. (String/Object)
+           3) Get all TLS. (String/Object)
+           4) Expereice based filter. (String/object)
+           5) Get All HR Emplyes.(String/object)
+           6) Get All female Employees. (String/object)
+           7) Get All Male Employees (String/object)
+           8) Get my Clients. (String/object)
+           9) How much salaries Spending per Month. (Number)
+           10) Annully profit-loss. (Number)
+           11) Office expences per month. (Number)
+           12) Emplye Bonous. (Number)
+           13) Employe Attdance data. (Number/object)
+           14) Who having High Salary - Low salary. (Number/object)
+           15) Delete Employee. (Boolean)
+           16) Add New Employee. (String//Object) -> Push()
+           17) Add Hike to employee. (Number)
+           18) Status of employee (Active/inactive). (Boolen)
+           19) Health incsuance. (String/Object/number)
+           20) Laptop Assigned. (boolean.)
+           21) Replace employee.
+
+           {
+            color: red;
+           }
+    -->
+
+    <script>
+        // Create Array
+      //  const Hero_list = ["Prabas","NTR","Ramcharan","Pawan Kalyan"];
+      //  Hero_list.length;
+     //   Hero_list[2];
+
+        // Objects - Propertie -         Values.
+        // ->Movie - movie.name           Bro
+      //             movie.budject.        20cr
+     //              Movie.cast           PK & Sai
+     //              movie.relesaingdate   12oct.
+
+    //    const movie = 
+
+      //  const movie2 = ;
+
+     //   const movie3 = ;
+
+        const movies = [
+        {
+            name : 'BRO',
+            budject : 120000000,
+            relesingom : '12thoct',
+            cast : 'PK&Sai',
+            duration : 120,
+            threeD : 'yes',
+            imge : 'https:bookmyshow/img/bro.png',
+            price: 150
+        },
+        {
+            name : 'Kalki',
+            budject : 150000000,
+            relesingom : '13thoct',
+            cast : 'Prabas&hasan',
+            duration : 160,
+            threeD : 'no',
+            price: 100,
+            cust: 3,
+            ram : '4gb'
+        },
+        {
+            name : 'Baby',
+            budject : 150000,
+            relesingom : '13July',
+            cast : 'Devarakonda',
+            duration : 120,
+            threeD : 'no',
+            price: 200
+        }
+        ];
+   // console.log(movies);
+        
+      // Total Movies;
+      movies.length; //3
+      const new_movies = {
+            name : 'Baahubali',
+            budject : 180000,
+            relesingom : '13July2022',
+            cast : 'Prabas & Raana',
+            duration : 127,
+            threeD : 'no',
+            price: 450
+
+      }
+
+      // Add new object to the array - Push()
+      movies.push(new_movies);
+
+     // console.log(movies);
+
+      // Delete Last movies. - Pop()
+      movies.pop();
+      console.log(movies);
+
+     // Mix-merge arrays - concat()
+      const express_trains = [{
+        name: 'narayandri',
+        time: '2AM',
+        price: 120,
+      }, "Janmabomi","Shabari"];
+      console.log(express_trains);
+      const passenger_trains = ["Repalle Pasen", "XYZ Passengres"];
+      console.log(passenger_trains);
+
+      const total_trains = express_trains.concat(passenger_trains);
+      console.log(total_trains);
+
+  const employees = [
+    {
+        emp_name: 'Manohar Lotlapalli',
+        emp_age : 31,
+        emp_address : 'Hyde',
+        gender : 'male',
+        designation : 'Web developer',
+        salary : 20000,
+        doj : '2019-march',
+        laptop_assign : true,
+        emp_helth_insu : 500000,
+        image : 'https:images/test.jpg'
+    },
+    {
+        emp_name: 'Manohar Lotlapalli',
+        emp_age : 31,
+        emp_address : 'Hyde',
+        gender : 'male',
+        designation : 'Web developer',
+        salary : 20000,
+        doj : '2019-march',
+        laptop_assign : true,
+        emp_helth_insu : 500000
+    },
+    {
+        emp_name: 'Manohar Lotlapalli',
+        emp_age : 31,
+        emp_address : 'Hyde',
+        gender : 'male',
+        designation : 'Web developer',
+        salary : 40000,
+        doj : '2019-march',
+        laptop_assign : true,
+        emp_helth_insu : 500000
+    },
+    {
+        emp_name: 'Manohar Lotlapalli',
+        emp_age : 31,
+        emp_address : 'Hyde',
+        gender : 'male',
+        designation : 'Web developer',
+        salary : 40000,
+        doj : '2019-march',
+        laptop_assign : true,
+        emp_helth_insu : 500000
+    }
+  ];
+
+
+  let hSalary = 5000;
+  const heighSala = [];
+  for(let i=0; i< employees.length; i++ ) {
+
+    if()
+       
+   // hSalary +=  employees[i].salary;
+  }
+ // var Strinsssg = heighSala[0].name;
+ // document.getElementById('emp').innerHTML =Strinsssg;
+  console.log(hSalary);
+
+    </script>
+    
+</body>
+</html>

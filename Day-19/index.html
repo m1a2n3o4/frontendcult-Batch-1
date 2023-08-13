@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Layout - HTML Semantic Tags.</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        header, main, nav, aside, footer  {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            border: 1px solid skyblue;
+        }
+
+        body {
+           display: grid;
+           grid-template-areas:
+           'header\ header header'
+           'nav content sidebar'
+           'nav footer footer'
+           ;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--
+        Height fill - Viewport Hright VH
+        Border-box
+        Grid Areas.
+        Semantic Tags (header, footer, section, nav, aside, main)
+        Border-box.
+        VH
+
+    -->
+
+    <header>Header</header>
+    <main>Main</main>
+    <nav>Navigation</nav>
+    <aside>Aside bar</aside>
+    <footer>Footer</footer>
+    
+</body>
+
+</html>

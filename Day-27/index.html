@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Variables, OPer, Methods/functions</title>
+    
+</head>
+<body>
+    <!--
+        Variables(Var, Let, Const) -> Store the data(String, numbers, boolean, fload, nothing....)
+        Operators,
+        Data-types, String, numbers, boolean, fload, nothing
+        Methods.
+        tell me :
+          Name:   string
+          designations: string
+          mobiles: 955 - number
+          gender: boolean()
+          address: string
+          non-veg: Yes/no. : bbolesn(true/false)
+          no answer: null
+          car - details: object()
+          manumano111@gmaail.com (Sting)
+
+    -->
+    <h2>JS - Var</h2>
+    <script>
+        // SYnatx for creating var
+        //var x = value; 
+
+        var x = 10; 
+        let myname = "Manohar"; //
+        //alert(myname);
+       // console.log('xyz');
+        var check = true;
+
+        var full_name = "manohar lotlapalli"; // we declare a varible with full_name and we assin valuye 'manohar' tye string
+        var mobile_numbr = 9553345235; // number
+        var desination = "web dev";
+        var non_veg = true;
+        var moneyy =  null;
+        var something = false;
+        var mobile_price = 12.45; //float
+           nothin_123 = 'xyz'; // undefind
+           // typeof -operator
+         // typeof(non_veg); // boolean
+        
+       // console.log(typeof(moneyy));
+        // Arthetic operatino
+        // adding +
+        // Sub -
+        // mul *
+        // Division / 
+        // perccentgae %
+        // Increment ++
+        // Decerement --
+
+
+
+      
+        
+       
+
+        // Dontaion
+        
+
+        
+
+
+       // console.log(a++);
+       // Method/function. - Synatx
+
+     //  function funname() {};
+
+       function basic_calculation() 
+       {
+                // Price-details
+                var total_tickets = 4;
+                var ticket_price = 300;
+                var total_price = total_tickets % ticket_price;
+                var gst_gov = 18;
+                var total_gst = total_price % gst_gov; 
+                var gran_total = total_price + total_gst; //1200
+       };
+
+       function food_calculations() {
+                //Adding food calculations
+                var Popcorn_Cheese = 200;
+                var selected = 3;
+                var total_food_price = Popcorn_Cheese * selected ; //600
+       };
+
+       function donation_price()
+        {
+                var base_value = 2;
+                var price_of_donation = base_value * total_tickets; //4
+        };
+
+       function payble_amount () {
+                //Paybale Amoiunt
+                var payable_amount = gran_total + total_food_price + price_of_donation; // 1804
+                document.getElementById('PayTotal').innerHTML = payable_amount;
+       };
+
+
+    </script>
+    <p id="price">1800</p>
+</body>
+</html>

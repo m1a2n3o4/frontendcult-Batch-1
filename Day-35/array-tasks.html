@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Array -Objects - Tasks</title>
+</head>
+<body>
+    <!--
+        Mereging Arrays. concate()
+        Adding. push()
+        Removing. splice()
+        Position. slice()
+        length. lengh()
+        adding. push()
+        last element removed. pop()
+        adding new elemet by position. splice()
+        cussting at some position - making new array. slice().
+        Assending ordeer - sort();
+        Reverese array - reverece();
+
+
+    -->
+    <script>
+        // Concate
+        const LatesMovies = ["DJ Tillu2", "Bro"];
+        const PastMovies = ["Baahubali", "Baahubali2","Bro"];
+        const floopmovies = ["abc","xyz"];
+        const cart = ["baby dres","mobile"]; // global
+
+        const values123 = 0;
+
+        function additemtocart() {
+            const item = {item: 'powebank'};
+            cart.push(item);
+            values123 = 12222;
+
+
+        }
+
+        console.log(item);
+
+        const movies = LatesMovies.concat(PastMovies,floopmovies);
+        console.log(movies);
+
+        // Splicing
+            // -> Where youwant add element.
+            // -> U want to delete emlement after adding.
+            // -> Whats are the elements u want to add.
+
+        const cars = ["Audi","BMW","Kia","RR"];
+        cars.splice(3,0,"TATA", "Maaruthi");
+        console.log(cars);
+
+        //Slice
+
+        const mobiles = ["Apple","Onepluse","Samsung","Nokia","MI","Vivo","Oppp"];
+        console.log(mobiles[5]); //sting
+        const mobiles2 = mobiles.slice(5,6); //As array
+        console.log(mobiles);
+        console.log(mobiles2);
+
+        //Assending order - Sort().
+       constmyprices = [5000, 80000, 70000, 100000, 2000, 1000, 900];
+      // function lowtohigh() {
+       constmyprices.sort(
+        function (a,b) { return b - a }
+       );
+      // }
+       console.log(constmyprices);
+       console.log(mobiles.sort());
+
+       //Reverce array
+       console.log(mobiles.reverse());
+
+    </script>
+</body>
+</html>

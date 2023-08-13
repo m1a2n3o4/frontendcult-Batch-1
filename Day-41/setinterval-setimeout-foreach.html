@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - This - call - apply-bind</title>
+</head>
+<body>
+    <script>
+        // this is refger a object (self)
+       const train = {
+         trainname : 'Vande Bharath',
+         sppedlimit : 250,
+         accouches : 20,
+         colr : 'Blue and white',
+         sleper : false
+       };
+
+       const train2 = {
+         trainname : 'Vande Bharath',
+         sppedlimit : 250,
+         accouches : 20,
+         colr : 'Blue and white',
+         sleper : false,
+         trainfulldetails : function() {
+            console.log(this);
+         }
+       };
+
+     //  train.trainfulldetails();
+
+       function gettrains() {
+    // this.train2.trainfulldetails();
+       }
+      gettrains();
+       
+
+       // Call
+
+       const phonedetails = {
+        getfullPhonedetails : function() {
+            console.log(this);
+        }
+       }
+
+       function mymobilget(obj) {
+        console.log(obj)
+       }
+
+       const mobile = { mobile : 'IPhpne12', color: 'red', price : 50000};
+
+       phonedetails.getfullPhonedetails.call(mobile);
+       mymobilget(mobile);
+       /////
+
+
+
+       /// Arrow function
+    //    function addtwonumber(a,b) {
+    //     console.log(a+b);
+    //    }
+
+       let addtwonumber = (a,b) => { console.log(a+b); };
+      addtwonumber('hkjh',3); kjj3
+
+      if(true) {
+     console.log('yes');
+      } else {
+        console.log('no');
+     
+      }
+     // if(true) console,log('ddd') else console.log('fafasdff')
+
+     // conditin : console.log('yes') : console.log('no');
+ 
+    </script>
+</body>
+</html>

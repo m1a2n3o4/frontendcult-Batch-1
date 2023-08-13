@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Map, filter, Reduce (Array methods)</title>
+</head>
+<body>
+    <script>
+        const arr = [1,4,3,8,10];
+        // [2,8,6,16,20]
+        let newarray = []
+        for(let i=0; i<arr.length; i++) {
+            newarray.push(arr[i] * 2);
+        }
+        console.log(newarray);
+
+        // Map - it will retun array a result array
+        const arraydouble = arr.map( (x) => {
+            return  x * 2;
+        });
+        //[2,8,6,16,20]
+        console.log(arraydouble);
+    </script>
+</body>
+</html>

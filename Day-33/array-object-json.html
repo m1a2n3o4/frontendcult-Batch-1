@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Objects - Json</title>
+</head>
+<body>
+    <input type="text" id="input-bank"><button onclick="addnewBank()">Add newbak</button>
+    <h1 id="user-name"></h1>
+    <!--
+        Step1 : Array
+              : var, let, const, 
+              : sting, number, boolea, null, incre, dicri, Obejcts, Arrays. (Data Types).
+    -->
+   <script>
+    var name = "Manohar";
+    var mobile_number = "999999999";
+    var bank_accoun1 = "HDFC";
+    var bank_accoint2 = "Citi";
+    var Bank_account3 = "SBI";
+    // Arraays 
+    function addnewBank() {
+        var bank_accounts = ["HDFC", "CITI", "INdusind", "RBL bank","abcBank"]; // 3 values 
+        var input_bank = document.getElementById('input-bank').value;
+         bank_accounts.push(input_bank);
+
+            for(let i=0; i<bank_accounts.length; i++) {
+                console.log(bank_accounts[i]);
+            }
+    }
+    
+    var my_cars = ["audi","bmw", "sujiki"]; 
+    
+    // How to read array value.
+   // bank_accounts[0]; // HDFC
+   // bank_accounts[1]; //     bank_accounts[0]; // HDFC
+
+
+  //  console.log(bank_accounts[0]);
+   // console.log(my_cars[2]);
+   const articleCriterias =  [
+                {
+                    criteriaID: 122,
+                    name: "Manufacturer Restriction",
+                    unit: null,
+                    "values": [
+                        "ATE"
+                    ]
+                },
+                {
+                    "criteriaID": 200,
+                    "name": "Diameter [mm]",
+                    "unit": null,
+                    "values": [
+                        "19"
+                    ]
+                }
+            ];
+
+    var my_info = ["Mano", 20, 9555, ""];
+
+    // How to get the length of array
+  //  console.log(bank_accounts.length);
+
+
+   // Object
+
+   const manohardeatils = { name: "manohar", age:30, number: 93434};
+   const ashokdeatils = { name: "ashok", age:20, number: 7567};
+   const prasaddeatils = { name: "prasad", age:22, number: 636356};
+
+   console.log(ashokdeatils.name); // ashok
+
+   const user_details = [
+
+   { name: "manohar", age:30, number: 93434},
+   { name: "ashok", age:20, number: 7567},
+   { name: "prasad", age:22, number: 636356}
+
+   ];
+   for(let i=0; i<=user_details.length; i++) {
+       if(user_details[i].age >= 20) {
+                 console.log(user_details[i].name);
+       } 
+   }
+   var username = user_details[1].age;
+  // console.log(user_details[1])
+   //alert(username);
+   document.getElementById('user-name').innerHTML = username;
+
+
+
+
+
+   console.log(user_details[2]);
+
+   const articleCountryExcludes = [
+                {
+                    "countryID": "RA",
+                    "name": "Argentina"
+                },
+                {
+                    "countryID": "BOL",
+                    "name": "Bolivia"
+                },
+                {
+                    "countryID": "BR",
+                    "name": "Brazil"
+                },
+                {
+                    "countryID": "RCH",
+                    "name": "Chile"
+                },
+                {
+                    "countryID": "CO",
+                    "name": "Colombia"
+                },
+                {
+                    "countryID": "EC",
+                    "name": "Ecuador"
+                },
+                {
+                    "countryID": "GF",
+                    "name": "French Guyana"
+                },
+                {
+                    "countryID": "GUY",
+                    "name": "Guyana"
+                },
+                {
+                    "countryID": "MEX",
+                    "name": "Mexico"
+                },
+                {
+                    "countryID": "PY",
+                    "name": "Paraguay"
+                },
+                {
+                    "countryID": "PE",
+                    "name": "Peru"
+                },
+                {
+                    "countryID": "ROU",
+                    "name": "Uruguay"
+                },
+                {
+                    "countryID": "YV",
+                    "name": "Venezuela"
+                }
+            ];
+
+
+   console.log(articleCountryExcludes.length)
+
+   
+
+const Employe_data = [
+    {
+        fullname : 'Manohar Lotlapalli',
+        age : 32,
+        role: 'web developer',
+        mobile: 9553345235,
+        gender: 'male',
+        active: true,
+        salary: 10000
+    },
+    {
+        fullname : 'Prabas',
+        age : 35,
+        role: 'web developer',
+        mobile: 5635635635,
+        gender: 'male',
+        active: true,
+        salary: 20000
+    },
+    {
+        fullname : 'Pawan Kalyan',
+        age : 30,
+        role: 'Manager',
+        mobile: 2626246234,
+        gender: 'male',
+        active: true,
+        salary: 25000
+    },
+    {
+        fullname : 'Samantha',
+        age : 25,
+        role: 'Team lead',
+        mobile: 35356356356,
+        gender: 'female',
+        active: true,
+        salary: 20000
+    },
+    {
+        fullname : 'Suresh Raaju',
+        age : 20,
+        role: 'web developer',
+        mobile: 5635635635,
+        gender: 'male',
+        active: false,
+        salary: 8000
+    }
+];
+
+   </script>
+</body>
+</html>

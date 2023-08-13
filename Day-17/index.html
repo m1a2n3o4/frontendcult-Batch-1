@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        height: 50px;
+        width: 45%;
+        float: left;
+        border: 1px dotted green;
+        background-color: lightblue;
+        color: red;
+    }
+
+    .two {
+        height: 50px;
+        width: 50%;
+        float: right;
+        border: 1px dotted red;
+        background-color: lightcoral;
+    }
+
+    .two-one {
+      height: 30px;
+      width: 50%;
+      background-color: lightgreen;
+      margin-top: 10px;
+      float: left;
+    }
+
+    .two-two {
+        height: 30px;
+        width: 40%;
+        background-color: aqua;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .two-one-one {
+        width: 100%;
+        height: 20px;
+        background-color: black;
+        margin-top: 10px;
+    }
+
+     .one > p {
+        color: blue;
+       
+     }
+
+     .one h1 {
+        border: 2px solid red;
+     }
+
+     
+
+     .btn {
+        color: white;
+        padding: 5px;
+        border: none;
+        font-size: 20px;
+        border-radius: 4px;
+     }
+
+     .red {
+        background-color: red;
+     }
+
+     .green {
+        background-color: green;
+
+     }
+
+     .yellow {
+        background-color: yellow;
+     }
+
+    img {
+        display: none;
+    }
+
+   div:hover img {
+       display: block;
+   }
+
+   .c-para1 {
+    background-color: red;
+    display: block;
+   }
+
+</style>
+<body>
+    <!--
+        Widtth check.
+        display inline-block
+        Combinators. -> Descendant Com(Space )
+                        Child Selector(>)
+                        Adjacent sibling selector(+)
+                        General silbling selectors(~)
+        Pseudo selectors:
+           
+          selectors(h1, p, a, .one, btn, anything ): pseudo-class(:link, :hover, :vistited :focus :active) {
+            pro : value;
+          }
+            
+        . Div hover:
+        opacity. jk;
+        Nav Bars, Dropdowns.
+        css forms
+
+
+
+
+    -->
+    <!-- <div class="one yellow">
+        <h2>THis is h2</h2>
+        <p >THis is para 1</p>
+        <p>THis is para 2</p>
+        <section>
+            <p>This is section para</p>
+        </section>
+        <p>THis is para 3</p>
+        <h1>adsdsdsd</h1>
+        <p>THis is para 4</p>
+        <a>testtts</a>
+        <h1>adsdsdsd</h1>
+        <h1>adsdsdsd</h1>
+
+    </div>
+  
+    <input type="button" value="click here" class="btn red">
+    <input type="button" value="Submit" class="btn green">
+    <input type="button" value="Submit" class="btn yellow">
+
+    <div class="two">
+        <p>THis is para 2</p>
+        <div class="two-one">
+            <p>THis is para 3</p>
+        </div>
+        <div class="two-two">
+        </div>
+    </div> -->
+
+    <div class="hover-test">
+        <h3>Hover me for image</h3>
+        <img src="bg.jpg" alt="test-img" height="200">
+    </div>
+
+
+</body>
+</html>
